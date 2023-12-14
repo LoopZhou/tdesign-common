@@ -28,6 +28,33 @@
     font-size: @cascder-title-font-size;
   }
 
+  &__toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    height: 48px;
+
+    &-cancel,
+    &-confirm {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      user-select: none;
+      font-size: 16px;
+      height: 100%;
+      padding: 0 16px;
+    }
+
+    &-cancel {
+      color: @cascader-cancel-color;
+    }
+  
+    &-confirm {
+      color: @cascader-confirm-color;
+    }
+  }
+
   &__content {
     width: 100%;
     flex: 1;
